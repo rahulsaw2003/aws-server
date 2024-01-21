@@ -11,7 +11,7 @@ router.get("/unique", getUniqueUsers);
 
 // GET users with unique domains and availability.
 router.get("/me", (req, res) => {
-    return res.status(200).json({ message: "This is a message from the new route /api/users/me" });
+    return res.status(200).json({ message: "This is a message from the new route /api/users/me at 6.27 pm" });
 });
 
 // Create a new user.
