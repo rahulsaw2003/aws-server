@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const connectDB = async () => {
-	const mongoUrl = "mongodb+srv://rahulsaw2003:LDKUdoHnrKNHrAR9@cluster0.7hv2sht.mongodb.net/?retryWrites=true&w=majority";
+	const mongoUrl = process.env.MONGO_URI;
 	try {
 		const conn = await mongoose.connect(mongoUrl, {
 			dbName: "heliverse",
