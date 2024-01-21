@@ -14,7 +14,7 @@ connectDB();
 app.use("/api/users", userRouter);
 
 app.get("/", (req, res) => {
-	res.send("Welcome to the AWS Test Server");
+	res.send("Welcome to the Rahul's AWS Test Server");
 });
 
 app.listen(port, () => {
